@@ -1,31 +1,31 @@
 package Java_Training.Trainer_Manish.Day_1;
 
 public class Example6 {
-    public void add(int a, int b) {
-        int c = a + b;
-        System.out.println("Sum = " + c);
-    }
-
-    public void subtract(int a, int b) {
-        int c = a - b;
-        System.out.println("Subtract = " + c);
-    }
-
-    public void divide(int a, int b) {
-        int c = a / b;
-        System.out.println("Divide = " + c);
-    }
-
-    public void multiple(int a, int b) {
-        int c = a * b;
-        System.out.println("Multiple = " + c);
+    public static void checkFVotingEligibility(int age) {
+        if (age >= 18) {
+            System.out.println("Mr. Paramesh Eligible to Vote");
+        } else {
+            System.out.println("Mrs. Swetha Not Eligible to Vote");
+        }
     }
 
     public static void main(String[] args) {
-        Example6 obj = new Example6();
-        obj.add(40, 20);
-        obj.subtract(40, 10);
-        obj.divide(10, 4);
-        obj.multiple(10, 6);
+        checkFVotingEligibility(24);
     }
 }
+
+// Example ==> Using Constructor (TestExample6.java)
+
+/*
+ * package Java_Training.Trainer_Manish.Day_1;
+ * 
+ * public class Example6 {
+ * public static void checkFVotingEligibility(int age) {
+ * if (age >= 18) {
+ * System.out.println("Mr. Paramesh Eligible to Vote");
+ * } else {
+ * System.out.println("Mrs. Swetha Not Eligible to Vote");
+ * }
+ * }
+ * }
+ */
