@@ -1,5 +1,15 @@
 Hello Paramesh
 
+
+Integers
+Data Types
+Operators
+If Statements
+Even Odd
+Input User
+Task
+
+
 -------------------
 22/04/2022 Task - 1
 -------------------
