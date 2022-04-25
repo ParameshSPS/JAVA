@@ -1,14 +1,14 @@
 package Java_Training.Trainer_Aaryan.Java_25th.Tasks;
 
-public class Employee {
-    int Id;
+public class Employee {  
+    int Id;             // Data Element
     String Gender;
-    String FirstName; // Data Element
+    String FirstName;
     int Package;
     String Experience;
     String Location;
 
-    public Employee() {
+    public Employee() { // Default Constructor
         Id = 67620;
         Gender = "Male";
         FirstName = "Paramesh";
@@ -27,6 +27,7 @@ public class Employee {
         this.Location = location;
     }
 
+    // OverRide - toString()
     @Override
     public String toString() {
         return "Id = " + this.Id + " / Name=" + this.FirstName + " / Gender = " + this.Gender +
@@ -34,6 +35,7 @@ public class Employee {
                 " / Location = " + this.Location;
     }
 
+    // Getter & Setter
     public int getId() {
         return Id;
     }
@@ -86,6 +88,7 @@ public class Employee {
         Location = location;
     }
 
+    // Main Class
     public static void main(String[] args) {
         Employee E1, E2, E3, E4;
 
