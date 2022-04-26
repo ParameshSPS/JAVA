@@ -1,7 +1,7 @@
 package Java_Training.Trainer_Aaryan.Java_25th.Tasks;
 
-public class Employee {  
-    int Id;             // Data Element
+public class Employee {
+    int Id; // Data Element
     String Gender;
     String FirstName;
     int Package;
@@ -17,14 +17,15 @@ public class Employee {
         Location = "Dharmavaram";
     }
 
-    public Employee(int Id, String Gender, String FirstName, int Package, String Experience,
-            String location) {
+    public Employee(int Id, String Gender, String FirstName, int Package, String Experience, String location) {
+
         this.Id = Id;
         this.Gender = Gender;
         this.FirstName = FirstName;
         this.Package = Package;
         this.Experience = Experience;
         this.Location = location;
+
     }
 
     // OverRide - toString()
