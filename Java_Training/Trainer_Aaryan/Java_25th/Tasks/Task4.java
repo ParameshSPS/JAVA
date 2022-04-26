@@ -4,22 +4,34 @@ import java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args) {
-        System.out.println("Enter weight range: 1.greater than 90, 2.less than 30, 3.between 45-60");
-        try (Scanner sc = new Scanner(System.in)) {
-            int n = sc.nextInt();
-            switch (n) {
-                case 1:
-                    System.out.println("Fat");
-                    break;
-                case 2:
-                    System.out.println("Thin");
-                    break;
-                case 3:
-                    System.out.println("Healthy");
-                    break;
-                default:
-                    break;
-            }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number");
+        int num = sc.nextInt();
+
+        int a = 0;
+
+        if (num > 90) {
+            a = 1;
+        } else if (num < 30) {
+            a = 2;
         }
+        if (num >= 45 && num <= 60) {
+            a = 3;
+        }
+
+        switch (a) {
+            case 1:
+                System.out.println("Fat");
+                break;
+            case 2:
+                System.out.println("Thin");
+                break;
+            case 3:
+                System.out.println("Health");
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+        sc.close();
     }
 }

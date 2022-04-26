@@ -9,18 +9,18 @@ public class DataTypes {
         double decimal = 99.4;
 
         // Word, Sentences
-        String string = "Paramesh is the attendee";
+        String string = "Paramesh is the Attendee";
 
         // Character
         char SingleChar = 's';
 
         // True, False
-        Boolean bool = true;
+        Boolean boolean1 = true;
 
         System.out.println(number);
         System.out.println(decimal);
         System.out.println(string);
         System.out.println(SingleChar);
-        System.out.println(bool);
+        System.out.println(boolean1);
     }
 }

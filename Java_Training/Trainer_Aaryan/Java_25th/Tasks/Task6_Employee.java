@@ -1,6 +1,6 @@
 package Java_Training.Trainer_Aaryan.Java_25th.Tasks;
 
-public class Task7_Employee {
+public class Task6_Employee {
     int Id; // Data Element
     String Gender;
     String FirstName;
@@ -8,7 +8,7 @@ public class Task7_Employee {
     String Experience;
     String Location;
 
-    public Task7_Employee() { // Default Constructor
+    public Task6_Employee() { // Default Constructor
         Id = 67620;
         Gender = "Male";
         FirstName = "Paramesh";
@@ -17,7 +17,7 @@ public class Task7_Employee {
         Location = "Dharmavaram";
     }
 
-    public Task7_Employee(int Id, String Gender, String FirstName, int Package, String Experience, String location) {
+    public Task6_Employee(int Id, String Gender, String FirstName, int Package, String Experience, String location) {
 
         this.Id = Id;
         this.Gender = Gender;
@@ -91,12 +91,12 @@ public class Task7_Employee {
 
     // Main Class
     public static void main(String[] args) {
-        Task7_Employee E1, E2, E3, E4;
+        Task6_Employee E1, E2, E3, E4;
 
-        E1 = new Task7_Employee();
-        E2 = new Task7_Employee(1234, "Male", "Aaryan", 800000, "8 Years", "Pune");
-        E3 = new Task7_Employee(4567, "Female", "Swetha", 300000, "4 Years", "Hyderabad");
-        E4 = new Task7_Employee(8901, "Female", "Bhavya", 1900000, "14 Years", "SBC");
+        E1 = new Task6_Employee();
+        E2 = new Task6_Employee(1234, "Male", "Aaryan", 800000, "8 Years", "Pune");
+        E3 = new Task6_Employee(4567, "Female", "Swetha", 300000, "4 Years", "Hyderabad");
+        E4 = new Task6_Employee(8901, "Female", "Bhavya", 1900000, "14 Years", "SBC");
 
         E1.setPackage(4444);
 

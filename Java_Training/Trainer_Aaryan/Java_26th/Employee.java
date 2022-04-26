@@ -69,43 +69,36 @@ class EmployeeSystem {
     static Scanner sc = new Scanner(System.in);
 
     private static Employee addEmployee() {
-        try (Scanner sc1 = new Scanner(System.in)) {
-            System.out.println("Enter the Employee Name : ");
-            String Ename = sc1.nextLine();
 
-            try (Scanner sc2 = new Scanner(System.in)) {
-                System.out.println("Enter the Employee Role : ");
-                String Erole = sc2.nextLine();
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Enter the Employee Name: ");
+        String Ename = sc1.nextLine();
 
-                try (Scanner sc3 = new Scanner(System.in)) {
-                    System.out.println("Enter the Employee Salary : ");
-                    double Esalary = sc3.nextDouble();
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter the Employee Role: ");
+        String Erole = sc2.nextLine();
 
-                    System.out.println("Enter the Employee DOB (dd/mm/yy) : ");
-                    try (Scanner docsc = new Scanner(System.in)) {
-                        String dob = docsc.nextLine();
-                        String d = dob.split("/")[0];
-                        String m = dob.split("/")[1];
-                        String y = dob.split("/")[2];
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Enter the Employee Salary: ");
+        double Esalary = sc3.nextDouble();
 
-                        System.out.println(LocalDate.of(Integer.parseInt(y), Integer.parseInt(m), Integer.parseInt(d)));
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Enter the Employee DOB (dd/mm/yy): ");
+        String dob = sc4.nextLine();
 
-                        try (Scanner sc5 = new Scanner(System.in)) {
-                            System.out.println("Enter the Employee Experience : ");
-                            double exp = sc5.nextDouble();
+        String d = dob.split("/")[0];
+        String m = dob.split("/")[1];
+        String y = dob.split("/")[2];
+        System.out.println(LocalDate.of(Integer.parseInt(y), Integer.parseInt(m), Integer.parseInt(d)));
 
-                            Employee e = new Employee(Ename, Erole, Esalary, dob, exp);
-                            System.out.println("Employee Added Successfully");
-                            System.out.println(e);
-                            return e;
-                        }
-                    } catch (NumberFormatException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-        return null;
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Enter the Employee Experience: ");
+        double exp = sc5.nextDouble();
+
+        Employee e = new Employee(Ename, Erole, Esalary, dob, exp);
+        System.out.println("Employee Details Added Successfully.");
+        System.out.println(e);
+        return e;
     }
 
     public static void main(String[] args) {
@@ -113,8 +106,8 @@ class EmployeeSystem {
         while (true) {
             System.out.println("1. Add an Employee");
             System.out.println("2. Exit the Program");
-            System.out.print("Enter your choice :- ");
 
+            System.out.print("Enter your choice:- ");
             int choice = sc.nextInt();
 
             switch (choice) {

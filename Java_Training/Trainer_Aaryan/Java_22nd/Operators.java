@@ -1,7 +1,7 @@
 package Java_Training.Trainer_Aaryan.Java_22nd;
 
 public class Operators {
-    public static void main(String[] args, boolean b) {
+    public static void main(String[] args) {
         System.out.println(1 < 2); // true
         System.out.println(1 > 2); // false
 

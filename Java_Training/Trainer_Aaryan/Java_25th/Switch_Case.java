@@ -2,7 +2,7 @@ package Java_Training.Trainer_Aaryan.Java_25th;
 
 public class Switch_Case {
     public static void main(String[] args) {
-        int i = 0;
+        int i = 1;
         // if i = 0 hello, 1 hello world, 2 aaryan, 3 hello again
         switch (i) {
             case 0:

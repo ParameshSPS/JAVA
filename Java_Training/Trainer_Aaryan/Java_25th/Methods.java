@@ -15,7 +15,7 @@ public class Methods {
     public static void main(String[] args) {
         add(5, 4);
         add(10, 20);
-        
+
         System.out.println(even(22));
     }
 }

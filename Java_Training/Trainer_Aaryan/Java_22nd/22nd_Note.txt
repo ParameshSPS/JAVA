@@ -10,9 +10,9 @@ Input User
 Task
 
 
--------------------
-22/04/2022 Task - 1
--------------------
+---------------
+22/04/2022 Task 
+---------------
 
 Q1. WPA that will take name and age as a input and tell that whether the person is adult or not
 

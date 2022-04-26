@@ -1,7 +1,5 @@
 package Java_Training.Trainer_Aaryan.Java_26th;
 
-import java.util.ArrayList;
-
 public class Arrays {
     public static void main(String[] args) {
         int[] arr = new int[4];
@@ -44,34 +42,5 @@ public class Arrays {
         for (int index = 0; index <= 2; index++) {
             System.out.println(obj[index]);
         }
-
-        // Example
-
-        int[] Array = { 10, 20, 30, 40 };
-
-        System.out.println(Array[2]);
-
-        for (int index = 0; index < Array.length; index++) {
-            System.out.println(Array[index]);
-        }
-
-        // Example
-
-        ArrayList<Integer> al = new ArrayList<Integer>();
-        al.add(10);
-        al.add(20);
-        al.add(30);
-        al.add(40);
-
-        for (int i = 0; i < al.size(); i++) {
-            System.out.println(al.get(i));
-        }
-
-        // Example
-
-        String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
-        cars[0] = "Cycle";
-        System.out.println(cars[1]);
-        // Now outputs Cycle instead of Volvo
     }
 }

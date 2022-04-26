@@ -1,35 +1,30 @@
 package Java_Training.Trainer_Aaryan.Java_25th.Tasks;
 
-import java.util.Scanner;
-
 public class Task5 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number");
-        int num = sc.nextInt();
-        int a = 0;
+        int weight = 50;
+        int ch = -1;
 
-        if (num > 90) {
-            a = 1;
-        } else if (num >= 45 && num <= 60) {
-            a = 2;
-        } else if (num < 30) {
-            a = 3;
-        } 
+        if (weight > 90) {
+            ch = 0;
+        } else if (weight <= 30) {
+            ch = 1;
+        } else if (weight >= 45 && weight <= 65) {
+            ch = 2;
+        }
 
-        switch (a) {
-            case 1:
+        switch (ch) {
+            case 0:
                 System.out.println("Fat");
                 break;
-            case 2:
-                System.out.println("Health");
-                break;
-            case 3:
+            case 1:
                 System.out.println("Thin");
                 break;
+            case 2:
+                System.out.println("Healthy");
+                break;
             default:
-                System.out.println("Invalid");             
+                break;
         }
-        sc.close();
     }
 }

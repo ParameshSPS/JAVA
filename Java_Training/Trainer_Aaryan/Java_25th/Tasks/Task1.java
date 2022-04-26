@@ -8,10 +8,16 @@ public class Task1 {
         try (Scanner sc = new Scanner(System.in)) {
             int number = sc.nextInt();
 
-            int i = 1;
-            while (i <= number) {
-                System.out.println(number + " * " + i + " = " + (number * i));
-                i++;
+            // int i = 1;
+            // while (i <= number) {
+            //     System.out.println(number + " * " + i + " = " + (number * i));
+            //     i++;
+            // }
+
+            int j = 1;
+            while (j <= 10) {
+                System.out.println(number + " * " + j + " = " + (number * j));
+                j++;
             }
         }
     }
