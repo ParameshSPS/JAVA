@@ -11,8 +11,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [Exp=" + Exp + ", FirstName=" + FirstName + ", Location=" + Location + ", Role=" + Role
-                + ", Salary=" + Salary + "]";
+        return "Employee [Exp = " + Exp + ", FirstName = " + FirstName + ", Location = " + Location + ", Role = " + Role
+                + ", Salary = " + Salary + "]";
     }
 
     public String getFirstName() {
@@ -69,27 +69,27 @@ class EmployeeSystem {
 
     private static Employee addEmployee() {
         try (Scanner sc1 = new Scanner(System.in)) {
-            System.out.println("Enter the Employee Name : ");
+            System.out.println("Enter the Employee Name: ");
             String FirstName = sc1.nextLine();
 
             try (Scanner sc2 = new Scanner(System.in)) {
-                System.out.println("Enter the Employee Role : ");
+                System.out.println("Enter the Employee Role: ");
                 String Role = sc2.nextLine();
 
                 try (Scanner sc3 = new Scanner(System.in)) {
-                    System.out.println("Enter the Employee Salary : ");
+                    System.out.println("Enter the Employee Salary: ");
                     double Salary = sc3.nextDouble();
 
                     try (Scanner sc4 = new Scanner(System.in)) {
-                        System.out.println("Enter the Employee Location : ");
+                        System.out.println("Enter the Employee Location: ");
                         String Location = sc4.nextLine();
 
                         try (Scanner sc5 = new Scanner(System.in)) {
-                            System.out.println("Enter the Employee Experience : ");
+                            System.out.println("Enter the Employee Experience: ");
                             double Exp = sc5.nextDouble();
 
                             Employee E = new Employee(FirstName, Role, Salary, Location, Exp);
-                            System.out.println("Employee Added Successfully");
+                            System.out.println("Employee Details Added Successfully");
                             System.out.println(E);
                             return E;
                         }
@@ -104,20 +104,22 @@ class EmployeeSystem {
         while (true) {
             System.out.println("1. Add an Employee Name");
             System.out.println("2. Exit the Program");
-            System.out.print("Enter your choice :- ");
 
-            int choice = sc.nextInt();
+            try (Scanner sc6 = new Scanner(System.in)) {
+                System.out.print("Enter your choice :- ");
+                int choice = sc6.nextInt();
 
-            switch (choice) {
-                case 1:
-                    addEmployee();
-                    break;
-                case 2:
-                    System.out.println("Thanks for using our Employee System.");
-                    System.exit(0); // Exit the Program
-                    break;
-                default:
-                    break;
+                switch (choice) {
+                    case 1:
+                        addEmployee();
+                        break;
+                    case 2:
+                        System.out.println("Thanks for using our Employee System.");
+                        System.exit(0); // Exit the Program
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
