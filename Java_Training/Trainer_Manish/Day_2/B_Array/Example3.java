@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Manish.Day_2.Array;
+package Java_Training.Trainer_Manish.Day_2.B_Array;
 
 public class Example3 {
     public static void main(String[] args) {

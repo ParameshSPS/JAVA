@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Manish.Day_2.Basics;
+package Java_Training.Trainer_Manish.Day_2.A_Basics;
 
 public class Example4 {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Example4 {
 // Example
 
 /*
- * package Java_Training.Trainer_Manish.Day_2.Basics;
+ * package Java_Training.Trainer_Manish.Day_2.A_Basics;
  * 
  * public class Example4 {
  * public static void main(String[] args) {
