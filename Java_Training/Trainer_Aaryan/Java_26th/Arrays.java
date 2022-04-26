@@ -66,5 +66,12 @@ public class Arrays {
         for (int i = 0; i < al.size(); i++) {
             System.out.println(al.get(i));
         }
+
+        // Example
+
+        String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+        cars[0] = "Cycle";
+        System.out.println(cars[1]);
+        // Now outputs Cycle instead of Volvo
     }
 }
