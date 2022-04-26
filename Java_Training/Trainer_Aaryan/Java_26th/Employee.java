@@ -1,66 +1,67 @@
 package Java_Training.Trainer_Aaryan.Java_26th;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Employee {
-    String FirstName;
-    String Role;
-    double Salary;
-    String Location;
-    double Exp;
+    String Ename;
+    String Erole;
+    double Esalary;
+    String dob;
+    double exp;
 
     @Override
     public String toString() {
-        return "Employee [Exp = " + Exp + ", FirstName = " + FirstName + ", Location = " + Location + ", Role = " + Role
-                + ", Salary = " + Salary + "]";
+        return "Employee [Ename=" + Ename + ", Erole=" + Erole + ", Esalary=" + Esalary + ", dob=" + dob + ", exp="
+                + exp + "]";
     }
 
-    public String getFirstName() {
-        return FirstName;
+    public String getEname() {
+        return Ename;
     }
 
-    public void setFirstName(String firstName) {
-        FirstName = firstName;
+    public void setEname(String ename) {
+        Ename = ename;
     }
 
-    public String getRole() {
-        return Role;
+    public String getErole() {
+        return Erole;
     }
 
-    public void setRole(String role) {
-        Role = role;
+    public void setErole(String erole) {
+        Erole = erole;
     }
 
-    public double getSalary() {
-        return Salary;
+    public double getEsalary() {
+        return Esalary;
     }
 
-    public void setSalary(double salary) {
-        Salary = salary;
+    public void setEsalary(double esalary) {
+        Esalary = esalary;
     }
 
-    public String getLocation() {
-        return Location;
+    public String getDob() {
+        return dob;
     }
 
-    public void setLocation(String location) {
-        Location = location;
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 
     public double getExp() {
-        return Exp;
+        return exp;
     }
 
     public void setExp(double exp) {
-        Exp = exp;
+        this.exp = exp;
     }
 
-    public Employee(String firstName, String role, double salary, String location, double exp) {
-        FirstName = firstName;
-        Role = role;
-        Salary = salary;
-        Location = location;
-        Exp = exp;
+    public Employee(String ename, String erole, double esalary, String dob, double exp) {
+        Ename = ename;
+        Erole = erole;
+        Esalary = esalary;
+        this.dob = dob;
+        this.exp = exp;
     }
 }
 
@@ -69,57 +70,63 @@ class EmployeeSystem {
 
     private static Employee addEmployee() {
         try (Scanner sc1 = new Scanner(System.in)) {
-            System.out.println("Enter the Employee Name: ");
-            String FirstName = sc1.nextLine();
+            System.out.println("Enter the Employee Name : ");
+            String Ename = sc1.nextLine();
 
             try (Scanner sc2 = new Scanner(System.in)) {
-                System.out.println("Enter the Employee Role: ");
-                String Role = sc2.nextLine();
+                System.out.println("Enter the Employee Role : ");
+                String Erole = sc2.nextLine();
 
                 try (Scanner sc3 = new Scanner(System.in)) {
-                    System.out.println("Enter the Employee Salary: ");
-                    double Salary = sc3.nextDouble();
+                    System.out.println("Enter the Employee Salary : ");
+                    double Esalary = sc3.nextDouble();
 
-                    try (Scanner sc4 = new Scanner(System.in)) {
-                        System.out.println("Enter the Employee Location: ");
-                        String Location = sc4.nextLine();
+                    System.out.println("Enter the Employee DOB (dd/mm/yy) : ");
+                    try (Scanner docsc = new Scanner(System.in)) {
+                        String dob = docsc.nextLine();
+                        String d = dob.split("/")[0];
+                        String m = dob.split("/")[1];
+                        String y = dob.split("/")[2];
+
+                        System.out.println(LocalDate.of(Integer.parseInt(y), Integer.parseInt(m), Integer.parseInt(d)));
 
                         try (Scanner sc5 = new Scanner(System.in)) {
-                            System.out.println("Enter the Employee Experience: ");
-                            double Exp = sc5.nextDouble();
+                            System.out.println("Enter the Employee Experience : ");
+                            double exp = sc5.nextDouble();
 
-                            Employee E = new Employee(FirstName, Role, Salary, Location, Exp);
-                            System.out.println("Employee Details Added Successfully");
-                            System.out.println(E);
-                            return E;
+                            Employee e = new Employee(Ename, Erole, Esalary, dob, exp);
+                            System.out.println("Employee Added Successfully");
+                            System.out.println(e);
+                            return e;
                         }
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
                     }
                 }
             }
         }
+        return null;
     }
 
     public static void main(String[] args) {
         // Menu Driven Program
         while (true) {
-            System.out.println("1. Add an Employee Name");
+            System.out.println("1. Add an Employee");
             System.out.println("2. Exit the Program");
+            System.out.print("Enter your choice :- ");
 
-            try (Scanner sc6 = new Scanner(System.in)) {
-                System.out.print("Enter your choice :- ");
-                int choice = sc6.nextInt();
+            int choice = sc.nextInt();
 
-                switch (choice) {
-                    case 1:
-                        addEmployee();
-                        break;
-                    case 2:
-                        System.out.println("Thanks for using our Employee System.");
-                        System.exit(0); // Exit the Program
-                        break;
-                    default:
-                        break;
-                }
+            switch (choice) {
+                case 1:
+                    addEmployee();
+                    break;
+                case 2:
+                    System.out.println("Thanks for using our Employee System.");
+                    System.exit(0); // Exit the Program
+                    break;
+                default:
+                    break;
             }
         }
     }
