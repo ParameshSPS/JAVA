@@ -68,25 +68,35 @@ class EmployeeSystem {
     static Scanner sc = new Scanner(System.in);
 
     private static Employee addEmployee() {
-        System.out.println("Enter the Employee Name : ");
-        String FirstName = sc.nextLine();
+        try (Scanner sc1 = new Scanner(System.in)) {
+            System.out.println("Enter the Employee Name : ");
+            String FirstName = sc1.nextLine();
 
-        System.out.println("Enter the Employee Role : ");
-        String Role = sc.nextLine();
+            try (Scanner sc2 = new Scanner(System.in)) {
+                System.out.println("Enter the Employee Role : ");
+                String Role = sc2.nextLine();
 
-        System.out.println("Enter the Employee Salary : ");
-        double Salary = sc.nextDouble();
+                try (Scanner sc3 = new Scanner(System.in)) {
+                    System.out.println("Enter the Employee Salary : ");
+                    double Salary = sc3.nextDouble();
 
-        System.out.println("Enter the Employee Location : ");
-        String Location = sc.nextLine();
+                    try (Scanner sc4 = new Scanner(System.in)) {
+                        System.out.println("Enter the Employee Location : ");
+                        String Location = sc4.nextLine();
 
-        System.out.println("Enter the Employee Experience : ");
-        double Exp = sc.nextDouble();
+                        try (Scanner sc5 = new Scanner(System.in)) {
+                            System.out.println("Enter the Employee Experience : ");
+                            double Exp = sc5.nextDouble();
 
-        Employee E = new Employee(FirstName, Role, Salary, Location, Exp);
-        System.out.println("Employee Added Successfully");
-        System.out.println(E);
-        return E;
+                            Employee E = new Employee(FirstName, Role, Salary, Location, Exp);
+                            System.out.println("Employee Added Successfully");
+                            System.out.println(E);
+                            return E;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
