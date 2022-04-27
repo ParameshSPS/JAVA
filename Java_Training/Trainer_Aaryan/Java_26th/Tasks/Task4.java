@@ -75,6 +75,7 @@ public class Task4 {
 
 // Example 3
 
+/*
 package Java_Training.Trainer_Aaryan.Java_26th.Tasks;
 
 public class Task4 {
@@ -87,5 +88,22 @@ public class Task4 {
         }
 
         System.out.println("Multiply: " + multiply);
+    }
+}
+*/
+
+// Example 4
+
+package Java_Training.Trainer_Aaryan.Java_26th.Tasks;
+
+public class Task4 {
+    public static void main(String[] args) {
+        int[] arr = {1, 3, 4, 5, 6, 9, -6, - 1, 4, 5};
+
+        int product = 1;
+        for (int i : arr) {
+            product *= i;
+        }
+        System.out.println("Product = " + product);
     }
 }

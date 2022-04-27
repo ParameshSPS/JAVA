@@ -12,11 +12,11 @@ public class Task3 {
         String LastName = "Sidhanatham";
 
         String FullName = FirstName + " " + LastName;
-
         System.out.println(FullName);
-        System.out.println(LocalDate.now());
-        System.out.println(LocalTime.now());
 
-        // System.out.println(LocalDateTime.now());
+        System.out.println(LocalDate.now()); // Date
+        System.out.println(LocalTime.now()); // Time
+
+        // System.out.println(LocalDateTime.now()); // Date And Time
     }
 }

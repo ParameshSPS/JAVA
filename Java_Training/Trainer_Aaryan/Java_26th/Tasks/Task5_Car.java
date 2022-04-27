@@ -90,5 +90,4 @@ public class Task5_Car {
         System.out.println(car1);
         System.out.println(car2);
     }
-
 }

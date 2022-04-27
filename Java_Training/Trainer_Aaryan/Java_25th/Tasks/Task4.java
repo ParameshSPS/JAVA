@@ -14,8 +14,7 @@ public class Task4 {
             a = 1;
         } else if (num < 30) {
             a = 2;
-        }
-        if (num >= 45 && num <= 60) {
+        } else if (num >= 45 && num <= 60) {
             a = 3;
         }
 
