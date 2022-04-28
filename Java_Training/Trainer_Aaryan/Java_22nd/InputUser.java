@@ -7,16 +7,16 @@ import java.util.*;
 public class InputUser {
     public static void main(String[] args) {
 
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Enter a Number");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a Number");
 
-            // inputs
+        // inputs
 
-            // double n = sc.nextInt();
-            // String n = sc.next();
-            int n = scanner.nextInt();
+        // double n = sc.nextInt();
+        // String n = sc.next();
+        int n = scanner.nextInt();
 
-            System.out.println("Your Entered Number is = " + n);
-        }
+        System.out.println("Your Entered Number is = " + n);
+        scanner.close();
     }
 }

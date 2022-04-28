@@ -9,7 +9,7 @@ public class DataTypes {
         double decimal = 99.4;
 
         // Word, Sentences
-        String string = "Paramesh is the Attendee";
+        String string = "Paramesh is a Attendee";
 
         // Character
         char SingleChar = 's';

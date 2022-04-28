@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class EvenOdd {
     public static void main(String[] args) {
         System.out.println("Enter a Number");
-        try (Scanner sc = new Scanner(System.in)) {
-            int number = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
 
-            // n % 2 == 0 (even)
-            // n % 2 not = 0 (odd)
+        // n % 2 == 0 (even)
+        // n % 2 not = 0 (odd)
 
-            // int number = 40;
+        // int number = 40;
 
-            if (number % 2 == 0) {
-                System.out.println(number + " is Even");
-            } else {
-                System.out.println(number + " is Odd");
-            }
+        if (number % 2 == 0) {
+            System.out.println(number + " is Even");
+        } else {
+            System.out.println(number + " is Odd");
         }
+        sc.close();
     }
 }
 
