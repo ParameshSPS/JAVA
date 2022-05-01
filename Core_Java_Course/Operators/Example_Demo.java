@@ -1,6 +1,6 @@
 package Core_Java_Course.Operators;
 
-public class PrePostDemo {
+public class Example_Demo {
     public static void main(String[] args) {
         int s = 4;
         s++; // first assign, later increment
