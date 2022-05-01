@@ -1,4 +1,4 @@
-package Core_Java_Course.Arrays;
+package Java_Course.Arrays;
 
 public class Array {
     public static void main(String[] args) {

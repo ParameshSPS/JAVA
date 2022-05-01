@@ -1,4 +1,4 @@
-package Core_Java_Course;
+package Java_Course;
 
 public class Helloworld {
     public static void main(String[] args) {

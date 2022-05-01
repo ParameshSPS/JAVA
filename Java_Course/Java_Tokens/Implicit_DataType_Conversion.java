@@ -1,4 +1,4 @@
-package Core_Java_Course.Java_Tokens;
+package Java_Course.Java_Tokens;
 
 public class Implicit_DataType_Conversion {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Core_Java_Course.Control_Statements;
+package Java_Course.Control_Statements;
 
 public class Nested_If_Statement {
     public static void main(String[] args) {

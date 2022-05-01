@@ -1,4 +1,4 @@
-package Core_Java_Course.Control_Statements;
+package Java_Course.Control_Statements;
 
 public class Ternary_Operator {
     public static void main(String[] args) {

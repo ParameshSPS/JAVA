@@ -1,4 +1,4 @@
-package Core_Java_Course.Operators;
+package Java_Course.Operators;
 
 public class Example_Demo {
     public static void main(String[] args) {
