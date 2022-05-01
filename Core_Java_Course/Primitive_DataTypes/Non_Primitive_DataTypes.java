@@ -1,9 +1,8 @@
-package Core_Java_Course;
+package Core_Java_Course.Primitive_DataTypes;
 
 public class Non_Primitive_DataTypes {
     public static void main(String[] args) {
 
-        // Use Multiple Types
         String str = "Test"; 
         System.out.println("String is: " + str);
 
@@ -18,6 +17,5 @@ public class Non_Primitive_DataTypes {
 
         System.out.println(arr);
         System.out.println(arr[0]);
-
     }
 }

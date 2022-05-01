@@ -1,4 +1,4 @@
-package Core_Java_Course;
+package Core_Java_Course.Primitive_DataTypes;
 
 public class Primitive_DataTypes {
     public static void main(String[] args) {
