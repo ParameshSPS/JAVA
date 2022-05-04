@@ -66,12 +66,6 @@ class Details {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
-    @Override
-    public String toString() {
-        return "Details [age=" + age + ", amount=" + amount + ", disease_Name=" + disease_Name + ", id=" + id
-                + ", name=" + name + ", phone_No=" + phone_No + "]";
-    }
 }
 
 public class MedicalShop1 {
