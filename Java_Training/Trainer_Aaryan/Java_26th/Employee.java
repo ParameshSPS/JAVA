@@ -4,40 +4,40 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Employee {
-    String Ename;
-    String Erole;
-    double Esalary;
+    String eName;
+    String eRole;
+    double eSalary;
     String dob;
     double exp;
 
     @Override
     public String toString() {
-        return "Employee [Ename=" + Ename + ", Erole=" + Erole + ", Esalary=" + Esalary + ", dob=" + dob + ", exp="
+        return "Employee [dob=" + dob + ", eName=" + eName + ", eRole=" + eRole + ", eSalary=" + eSalary + ", exp="
                 + exp + "]";
     }
 
-    public String getEname() {
-        return Ename;
+    public String geteName() {
+        return eName;
     }
 
-    public void setEname(String ename) {
-        Ename = ename;
+    public void seteName(String eName) {
+        this.eName = eName;
     }
 
-    public String getErole() {
-        return Erole;
+    public String geteRole() {
+        return eRole;
     }
 
-    public void setErole(String erole) {
-        Erole = erole;
+    public void seteRole(String eRole) {
+        this.eRole = eRole;
     }
 
-    public double getEsalary() {
-        return Esalary;
+    public double geteSalary() {
+        return eSalary;
     }
 
-    public void setEsalary(double esalary) {
-        Esalary = esalary;
+    public void seteSalary(double eSalary) {
+        this.eSalary = eSalary;
     }
 
     public String getDob() {
@@ -56,10 +56,10 @@ public class Employee {
         this.exp = exp;
     }
 
-    public Employee(String ename, String erole, double esalary, String dob, double exp) {
-        Ename = ename;
-        Erole = erole;
-        Esalary = esalary;
+    public Employee(String eName, String eRole, double eSalary, String dob, double exp) {
+        this.eName = eName;
+        this.eRole = eRole;
+        this.eSalary = eSalary;
         this.dob = dob;
         this.exp = exp;
     }
@@ -111,13 +111,15 @@ class EmployeeSystem {
     public static void main(String[] args) {
         // Menu Driven Program
         while (true) {
+            Scanner sc6 = new Scanner(System.in);
+
             System.out.println("1. Add an Employee");
             System.out.println("2. Exit the Program");
 
             System.out.print("Enter your choice:- ");
-            int choice = sc.nextInt();
+            int choices = sc6.nextInt();
 
-            switch (choice) {
+            switch (choices) {
                 case 1:
                     addEmployee();
                     break;
@@ -128,6 +130,8 @@ class EmployeeSystem {
                 default:
                     break;
             }
+
+            sc6.close();
         }
     }
 }

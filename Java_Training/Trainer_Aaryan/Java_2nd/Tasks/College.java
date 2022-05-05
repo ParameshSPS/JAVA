@@ -3,9 +3,9 @@ package Java_Training.Trainer_Aaryan.Java_2nd.Tasks;
 import java.util.*;
 
 public class College {
-    static Queue<Details> queue = new ArrayDeque<>();
+    static Queue<Quary> queue = new ArrayDeque<>();
 
-    public static Details dataEnter() {
+    public static Quary dataEnter() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("College Name: ");
@@ -23,14 +23,14 @@ public class College {
         System.out.println("No.of Students: ");
         int students = scanner.nextInt();
 
-        Details info = new Details(name, code, location, count, students);
+        Quary info = new Quary(name, code, location, count, students);
 
         scanner.close();
         return info;
     }
 
     public static void main(String[] args) {
-        Details info = dataEnter();
+        Quary info = dataEnter();
 
         queue.add(info);
 
@@ -46,14 +46,14 @@ public class College {
     }
 }
 
-class Details {
+class Quary {
     String clgName;
     String clgCode;
     String location;
     int clgStaff;
     int noOfStudents;
 
-    public Details(String clgName, String clgCode, String location, int clgStaff, int noOfStudents) {
+    public Quary(String clgName, String clgCode, String location, int clgStaff, int noOfStudents) {
         this.clgName = clgName;
         this.clgCode = clgCode;
         this.location = location;
