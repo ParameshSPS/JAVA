@@ -41,10 +41,11 @@ class EmpSys {
     private static Task2_Emp addTask2_Emp() {
 
         Scanner sc1 = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
+
         System.out.println("Enter a Name: ");
         String name = sc1.nextLine();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.println("Enter a DateOfBirth: ");
         String date = sc2.nextLine();
 
@@ -54,6 +55,9 @@ class EmpSys {
         Task2_Emp e = new Task2_Emp(name, date);
         System.out.println("Employee Details Added Successfully.");
         System.out.println(e);
+
+        sc1.close();
+        sc2.close();
         return e;
     }
 

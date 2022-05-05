@@ -71,18 +71,20 @@ class EmployeeSystem {
     private static Employee addEmployee() {
 
         Scanner sc1 = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
+        Scanner sc3 = new Scanner(System.in);
+        Scanner sc4 = new Scanner(System.in);
+        Scanner sc5 = new Scanner(System.in);
+
         System.out.println("Enter the Employee Name: ");
         String Ename = sc1.nextLine();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.println("Enter the Employee Role: ");
         String Erole = sc2.nextLine();
 
-        Scanner sc3 = new Scanner(System.in);
         System.out.println("Enter the Employee Salary: ");
         double Esalary = sc3.nextDouble();
 
-        Scanner sc4 = new Scanner(System.in);
         System.out.println("Enter the Employee DOB (dd/mm/yy): ");
         String dob = sc4.nextLine();
 
@@ -91,13 +93,18 @@ class EmployeeSystem {
         String y = dob.split("/")[2];
         System.out.println(LocalDate.of(Integer.parseInt(y), Integer.parseInt(m), Integer.parseInt(d)));
 
-        Scanner sc5 = new Scanner(System.in);
         System.out.println("Enter the Employee Experience: ");
         double exp = sc5.nextDouble();
 
         Employee e = new Employee(Ename, Erole, Esalary, dob, exp);
         System.out.println("Employee Details Added Successfully.");
         System.out.println(e);
+
+        sc1.close();
+        sc2.close();
+        sc3.close();
+        sc4.close();
+        sc5.close();
         return e;
     }
 

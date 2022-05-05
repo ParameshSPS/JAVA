@@ -96,6 +96,9 @@ public class MedicalShop1 {
 
         Details data = new Details(id, name, age, diseasename, phoneno, fee);
 
+        // stack.push(data);
+        // System.out.println(data);
+
         scanner.close();
         sc1.close();
         sc2.close();
@@ -103,9 +106,12 @@ public class MedicalShop1 {
     }
 
     public static void main(String[] args) {
+
+        // enterDetails();
+
         Details data = enterDetails();
 
-        stack.push(data);
+        stack.add(data);
 
         // System.out.println(stack);
 
