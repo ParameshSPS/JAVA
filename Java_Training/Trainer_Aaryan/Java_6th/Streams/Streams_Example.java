@@ -1,10 +1,7 @@
 package Java_Training.Trainer_Aaryan.Java_6th.Streams;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.List;
-import java.util.Set;
 import java.util.function.Function;
 
 public class Streams_Example {
@@ -28,24 +25,24 @@ public class Streams_Example {
         // Example 1
         List<Integer> list1 = new ArrayList<>();
 
-        System.out.println("\n Print multiply: ");
+        System.out.println("\nPrint multiply: ");
         for (Integer i : list) {
             list1.add(i * i);
         }
         System.out.println(list1);
 
         // Example 2
-        System.out.println("\n Print multiply using stream(map): ");
+        System.out.println("\nPrint multiply using stream(map): ");
         List<Integer> add = list.stream().map(i -> i + i).collect(Collectors.toList());
         System.out.println(add);
 
         // Example 3
-        System.out.println("\n Print multiply using stream(set): ");
+        System.out.println("\nPrint multiply using stream(set): ");
         Set<Integer> add1 = list.stream().map(i -> i * i).collect(Collectors.toSet());
         System.out.println(add1);
 
         // Example 1
-        System.out.println("\n Odd numbers: ");
+        System.out.println("\nOdd numbers: ");
         Collections.sort(list);
         for (int e : list) {
             if (e % 2 != 0) {
@@ -54,12 +51,12 @@ public class Streams_Example {
         }
 
         // Example 2
-        System.out.println("\n Even number");
+        System.out.println("\nEven number");
         List<Integer> add2 = list.stream().filter(e -> (e % 2 == 0)).sorted().collect(Collectors.toList());
         System.out.println(add2);
 
         // Example 3
-        System.out.println("\n Even number");
+        System.out.println("\nEven number");
         list.stream().filter(e -> (e % 3 == 0)).sorted()
                 .collect(Collectors.toMap(e -> e + " Bow", Function.identity()))
                 .forEach((k, v) -> System.out.println("Key : " + k + ", Value : " + v));
