@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_6th.Streams_Practice;
+package Java_Course.Streams.Streams_Practice;
 
 // Using stream sorted to sort a stream of user defined class objects
 import java.util.*;

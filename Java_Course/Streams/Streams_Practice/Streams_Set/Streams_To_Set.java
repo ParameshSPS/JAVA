@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_6th.Streams_Practice.Streams_Set;
+package Java_Course.Streams.Streams_Practice.Streams_Set;
 
 import java.util.Collections;
 import java.util.HashSet;
