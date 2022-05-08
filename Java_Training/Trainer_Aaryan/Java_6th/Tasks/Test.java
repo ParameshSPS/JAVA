@@ -47,8 +47,7 @@ public class Test {
         List<Employee_Info> list = empList.stream().filter(e -> e.getSalary() > 10000).collect(Collectors.toList());
 
         System.out.println(list);
-        // [102-->BBB-->20000-->Female, 103-->CCC-->30000-->Male,
-        // 104-->DDD-->40000-->Female]
+        // [102-->BBB-->20000-->Female, 103-->CCC-->30000-->Male, 104-->DDD-->40000-->Female]
 
         // I wanr list of salaries who is drawing more than 10000
 
