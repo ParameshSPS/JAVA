@@ -16,8 +16,8 @@ public class First_Code {
 
             String arr[] = new String[num];
 
-            for (int i = 0; i < num; i++)   
-            arr[i] = scanner.next();
+            for (int i = 0; i < num; i++)
+                arr[i] = scanner.next();
 
             int length = 0;
 
@@ -48,6 +48,5 @@ public class First_Code {
                 }
             }
         }
-
     }
 }
