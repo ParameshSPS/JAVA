@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Prime {
     public static void main(String[] args) {
-        int i, count;
-        System.out.print("Enter the number: ");
+        int n, count;
+        System.out.print("Enter the n -> number: ");
         try (Scanner sc = new Scanner(System.in)) {
-            int n = sc.nextInt();
-            System.out.println("Prime numbers between 1 to " + n + " are ");
-            for (int j = 2; j <= n; j++) {
+            int num = sc.nextInt();
+            System.out.println("Prime numbers between 1 to " + num + " are ");
+            for (int s = 2; s <= num; s++) {
                 count = 0;
-                for (i = 1; i <= j; i++) {
-                    if (j % i == 0) {
+                for (n = 1; n <= s; n++) {
+                    if (s % n == 0) {
                         count++;
                     }
                 }
                 if (count == 2)
-                    System.out.print(j + "");
+                    System.out.print(s + " ");
             }
         }
     }
