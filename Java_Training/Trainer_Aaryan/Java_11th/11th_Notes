@@ -1,0 +1,21 @@
+Hi Friends
+
+---------------
+11/05/2022 Task 
+---------------
+
+
+Q1. WPA to display current date and time.
+
+Q2. Write an sql query to insert name, age and gender into test table.
+
+Q3. WPA to Sort the characters of a string.
+    Procedure :- Convert each char element into int and then sort them.
+
+Q4. WPA to input a string reverse it and then remove all the even occurring characters
+
+Q5. Create a functional interface named Maths define one function add(a, b) with two parameteres a and b. 
+    Create one class called M and create object of Maths interface using lambda expression.
+
+Q6. 5 Factorial
+
