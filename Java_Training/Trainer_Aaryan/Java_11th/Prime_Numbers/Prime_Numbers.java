@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_11th;
+package Java_Training.Trainer_Aaryan.Java_11th.Prime_Numbers;
 
 public class Prime_Numbers {
 
