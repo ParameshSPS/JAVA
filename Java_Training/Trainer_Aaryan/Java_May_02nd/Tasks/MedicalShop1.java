@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_2nd.Tasks;
+package Java_Training.Trainer_Aaryan.Java_May_02nd.Tasks;
 
 import java.util.*;
 

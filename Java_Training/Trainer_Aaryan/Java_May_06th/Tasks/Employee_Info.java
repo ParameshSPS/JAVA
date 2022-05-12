@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_6th.Tasks;
+package Java_Training.Trainer_Aaryan.Java_May_06th.Tasks;
 
 public class Employee_Info {
     public long getEmpId() {

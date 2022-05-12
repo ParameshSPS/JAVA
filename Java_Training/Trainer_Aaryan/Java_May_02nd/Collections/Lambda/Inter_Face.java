@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_2nd.Collections.Lambda;
+package Java_Training.Trainer_Aaryan.Java_May_02nd.Collections.Lambda;
 
 @FunctionalInterface
 

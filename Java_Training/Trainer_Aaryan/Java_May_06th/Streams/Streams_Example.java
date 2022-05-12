@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_6th.Streams;
+package Java_Training.Trainer_Aaryan.Java_May_06th.Streams;
 
 import java.util.*;
 import java.util.stream.Collectors;

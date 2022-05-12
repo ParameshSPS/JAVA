@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_6th.Tasks;
+package Java_Training.Trainer_Aaryan.Java_May_06th.Tasks;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package Java_Training.Trainer_Aaryan.Java_May_2nd.Collections;
+package Java_Training.Trainer_Aaryan.Java_May_02nd.Collections;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
