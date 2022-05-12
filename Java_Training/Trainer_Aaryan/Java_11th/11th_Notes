@@ -18,4 +18,3 @@ Q5. Create a functional interface named Maths define one function add(a, b) with
     Create one class called M and create object of Maths interface using lambda expression.
 
 Q6. 5 Factorial
-

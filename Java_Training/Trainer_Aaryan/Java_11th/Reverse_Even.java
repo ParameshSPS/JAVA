@@ -9,10 +9,11 @@ public class Reverse_Even {
         }
 
         // for (int i = 0; i < str.length(); i++) {
-        //     if (i % 2 == 0) {
-        //         s = s.replace(s.charAt(i) + "", "");
-        //     }
+        // if (i % 2 == 0) {
+        // s = s.replace(s.charAt(i) + "", "");
         // }
+        // }
+
         return str;
     }
 
