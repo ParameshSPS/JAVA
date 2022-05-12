@@ -9,5 +9,9 @@ public class Task2 {
             String multiple = (number + " * " + i + " = " + (number * i));
             System.out.println(multiple);
         }
+
+        // Example 
+        int i = 10 + + 11 - - 12 + + 13 - - 14 + + 15;
+        System.out.println("Answer is: " + i); // 75
     }
 }
