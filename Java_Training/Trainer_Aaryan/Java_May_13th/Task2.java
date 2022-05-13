@@ -3,105 +3,71 @@ package Java_Training.Trainer_Aaryan.Java_May_13th;
 import java.util.Scanner;
 
 public class Task2 {
-    static int smallestPrime;
-    static int bigPrime;
-    static int smallestPrime1;
-    static int bigPrime1;
-    static int NearestPrimeNum1;
 
-    public static boolean inPrime(int n) {
-        for (int i = 2; i < n; i++) {
-            if (n % i == 0) {
+    static Scanner sc = new Scanner(System.in);
+
+    public static boolean isPrime(int number) {
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
                 return false;
             }
         }
         return true;
     }
 
-    public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            int NearestPrimeNum;
-            System.out.println("Enter First number :");
-            int n1 = sc.nextInt();
-            System.out.println("Enter Second number :");
-            int n2 = sc.nextInt();
+    public static int smallerPrime(int number) {
 
-            if (inPrime(n1)) {
-                System.out.println(n1 + " itself it is a Prime Number");
-            } else {
-
-                smallestPrime = -1;
-                bigPrime = -1;
-
-                for (int j = n1; j > 0; j--) {
-                    if (inPrime(j)) {
-                        smallestPrime = j;
-                        break;
-
-                    }
-                }
-                int count = n1 + 1;
-                while (true) {
-                    if (inPrime(count)) {
-                        bigPrime = count;
-                        break;
-                    }
-                    count++;
-                }
-
-                int step1 = bigPrime - n1;
-                int step2 = n1 - smallestPrime;
-
-                if (step1 < step2) {
-                    NearestPrimeNum = bigPrime;
-                } else {
-                    NearestPrimeNum = smallestPrime;
-                }
-
-                System.out.println("First Smallest Prime is :" + smallestPrime);
-                System.out.println("First biggest Pime is :" + bigPrime);
-                System.out.println("Nearest prime number of " + n1 + " is " + NearestPrimeNum);
-            }
-
-            if (inPrime(n2)) {
-                System.out.println(n2 + " itself it is a Prime Number");
-            } else {
-
-                smallestPrime1 = -1;
-                bigPrime1 = -1;
-
-                for (int i = n2; i > 0; i--) {
-                    if (inPrime(i)) {
-                        smallestPrime1 = i;
-                        break;
-                    }
-                }
-                int count1 = n2 + 1;
-                while (true) {
-                    if (inPrime(count1)) {
-                        bigPrime1 = count1;
-                        break;
-                    }
-                    count1++;
-                }
-
-                int step3 = bigPrime1 - n2;
-                int step4 = n2 - smallestPrime1;
-
-                if (step3 < step4) {
-                    NearestPrimeNum1 = bigPrime1;
-                } else {
-                    NearestPrimeNum1 = smallestPrime1;
-                }
-                System.out.println("Second Smallest Prime is :" + smallestPrime1);
-                System.out.println("Second Biggest Prime is :" + bigPrime1);
-                System.out.println("Second Nearest prime number of " + n2 + " is " + NearestPrimeNum1);
-
-                int z1 = smallestPrime + smallestPrime1;
-                int z2 = bigPrime + bigPrime1;
-                int y = z1 * z2;
-                System.out.println(y);
+        int smaller = 0;
+        for (int i = number - 1; i > 0; i--) {
+            if (isPrime(i)) {
+                smaller = i;
+                break;
             }
         }
+        return smaller;
+    }
+
+    public static int biggerPrime(int number) {
+
+        int bigger = 0;
+        int counter = number + 1;
+        while (true) {
+            if (isPrime(counter)) {
+                bigger = counter;
+                break;
+            }
+            counter++;
+        }
+        return bigger;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Enter a number: ");
+        int inputNumber = sc.nextInt();
+        int s1 = smallerPrime(inputNumber);
+        int s2 = biggerPrime(inputNumber);
+
+        // smaller and bigger prime numbers of s1
+
+        int s1SmallerPrime = smallerPrime(s1);
+        int s1BiggerPrime = biggerPrime(s1);
+
+        // smaller and bigger prime numbers of s2
+
+        int s2SmallerPrime = smallerPrime(s2);
+        int s2BiggerPrime = biggerPrime(s2);
+
+        // addition of smaller prime numbers of s1 and s2
+
+        int sumOfSmaller = s1SmallerPrime + s2SmallerPrime;
+        int sumOfBigger = s1BiggerPrime + s2BiggerPrime;
+
+        // product of smaller and bigger prime numbers sum
+
+        int product = sumOfSmaller * sumOfBigger;
+
+        System.out.println("The product of smaller and bigger prime numbres sum is: " + product);
+
     }
 }
