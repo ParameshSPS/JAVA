@@ -34,7 +34,7 @@ public class test_toyShop {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("----> Enter the List: ");
+            System.out.println("----> Enter the List <----");
             int num = scanner.nextInt();
 
             int price[] = new int[num];
@@ -45,7 +45,22 @@ public class test_toyShop {
 
             int output = getMaxToys(price, money);
 
-            System.out.println("The Maximum No.Of toys you can purchase is --> " + output);
+            System.out.println("The Maximum No.Of toys you can purchase is :---> " + output);
         }
     }
 }
+
+// OutPut
+/*
+----> Enter the List <----
+7
+1
+4
+5
+3
+2
+1
+6
+6
+The Maximum No.Of toys you can purchase is :---> 3
+*/
