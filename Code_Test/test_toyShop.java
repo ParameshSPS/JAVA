@@ -13,7 +13,9 @@ public class test_toyShop {
         int maximum = 0;
 
         for (int i = 0; i < price.length; i++) {
+
             add = count = 0;
+
             for (int j = i; j < price.length; j++) {
 
                 if ((add + price[j]) <= money) {
@@ -25,7 +27,6 @@ public class test_toyShop {
                     add = 0;
                     break;
                 }
-
             }
         }
         return maximum;
@@ -35,15 +36,16 @@ public class test_toyShop {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("----> Enter the List: ");
             int num = scanner.nextInt();
+
             int price[] = new int[num];
 
             for (int i = 0; i < num; i++)
                 price[i] = scanner.nextInt();
             int money = scanner.nextInt();
-            
+
             int output = getMaxToys(price, money);
 
-            System.out.println("The Maximum No.Of toys you can purchase --> " + output);
+            System.out.println("The Maximum No.Of toys you can purchase is --> " + output);
         }
     }
 }
