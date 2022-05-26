@@ -6,6 +6,10 @@ package Code_Test;
 import java.util.Scanner;
 
 public class test_toyShop {
+    static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner1 = new Scanner(System.in);
+    static Scanner scanner2 = new Scanner(System.in);
+
     public static int getMaxToys(int price[], int money) {
 
         int count = 0;
@@ -33,26 +37,33 @@ public class test_toyShop {
     }
 
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("----> Enter the List <----");
-            int num = scanner.nextInt();
 
-            int price[] = new int[num];
+        System.out.println("----> Please Enter the Number of Toys <----");
+        // input Length = 9
+        int num = scanner.nextInt();
 
-            for (int i = 0; i < num; i++)
-                price[i] = scanner.nextInt();
-            int money = scanner.nextInt();
+        System.out.println("----> Please Enter the Prices of Toys <----");
+        // Input Prices = [7,1,4,5,3,2,1,6,6]
+        int price[] = new int[num];
+        for (int i = 0; i < num; i++)
+            price[i] = scanner1.nextInt();
 
-            int output = getMaxToys(price, money);
+        System.out.println("----> Please Enter the Amount <----");
+        // Input Amount = RS.10
+        int money = scanner2.nextInt();
 
-            System.out.println("The Maximum No.Of toys you can purchase is :---> " + output);
-        }
+        int output = getMaxToys(price, money);
+        System.out.println("The Maximum No.Of toys you can purchase:---> " + output);
+        // Output = 3
     }
 }
 
 // OutPut
+
 /*
-----> Enter the List <----
+ ----> Please Enter the Number of Toys <----
+9
+----> Please Enter the Prices of Toys <----
 7
 1
 4
@@ -62,5 +73,7 @@ public class test_toyShop {
 1
 6
 6
-The Maximum No.Of toys you can purchase is :---> 3
+----> Please Enter the Amount <----
+10
+The Maximum No.Of toys you can purchase:---> 3
 */
